@@ -1,28 +1,20 @@
 <template>
   <div id="app">
     <NavBar />
-    <Hero />
-    <Projects />
-    <About />
-    <Contact />
+    <router-view></router-view>
+    <Footer />
   </div>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue'
-import Hero from './components/Hero.vue'
-import Projects from './components/Projects.vue'
-import About from './components/About.vue'
-import Contact from './components/Contact.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
     NavBar,
-    Hero,
-    Projects,
-    About,
-    Contact
+    Footer
   }
 }
 </script>
@@ -37,5 +29,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   /* margin-top: 60px; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 </style>
