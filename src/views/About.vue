@@ -203,6 +203,14 @@
     overflow: hidden;
   }
   
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
   .about::before {
     content: '';
     position: absolute;
@@ -228,26 +236,24 @@
   }
   
   .glass-card {
-    margin-bottom: 0;
-  }
-  
-  .expertise-section {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .section-title {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    background: linear-gradient(90deg, var(--accent), #00C6FF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 24px;
+    padding: 2.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
   }
   
   .bio {
     font-size: 1.2rem;
     line-height: 1.8;
     color: var(--text-secondary);
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    max-width: 100%;
+    white-space: normal;
+    display: block;
   }
   
   .stats {
@@ -485,7 +491,13 @@
 
   @media (max-width: 968px) {
     .about {
-      padding: 4rem 0;
+      padding: 2rem 0;
+    }
+
+    .container {
+      padding: 0 1rem;
+      max-width: 100vw;
+      overflow-x: hidden;
     }
 
     .about-content {
@@ -497,58 +509,64 @@
       gap: 2rem;
     }
 
-    .section-title {
-      font-size: 2.5rem;
-    }
-
     .glass-card {
-      padding: 1.5rem;
+      padding: 1rem;
+      margin: 0;
+      border-radius: 12px;
+      width: auto;
     }
 
     .bio {
-      font-size: 1.1rem;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      padding-right: 0;
+      width: 100%;
     }
 
-    .expertise-entry {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 0.5rem;
-      padding: 1rem 0;
+    .section-subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
     }
 
+    .entry-year,
+    .entry-title,
+    .entry-description,
+    .expertise-title,
     .expertise-icon {
-      font-size: 1.3rem;
+      font-size: 0.9rem;
     }
 
-    .expertise-title {
-      font-size: 1.4rem;
+    .project-year,
+    .project-title,
+    .project-description {
+      font-size: 0.9rem;
     }
 
-    .expertise-description {
+    .highlight-title {
       font-size: 1rem;
     }
 
-    .separator {
-      display: none;
+    .nomination-item {
+      font-size: 0.9rem;
     }
 
-    h3.expertise-title {
-      font-size: 1.8rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .image-container {
-      /* aspect-ratio: 16/9; */
+    .nominations-list {
+      margin-left: 0.5rem;
     }
   }
 
   @media (max-width: 480px) {
     .about {
-      padding: 3rem 0;
+      padding: 1.5rem 0;
+      padding-top: 4rem;
     }
 
-    .section-title {
-      font-size: 2rem;
+    .section-subtitle {
+      font-size: 1.1rem;
+    }
+
+    .glass-card {
+        width: 93%;
     }
   }
 

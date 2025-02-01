@@ -9,8 +9,14 @@
             <p><a href="mailto:arebotnevik@gmail.com">arebotnevik@gmail.com</a></p>
           </div>
           <div class="method-details">
-            <h4>Mobil</h4>
-            <p><a href="tel:+4797747012">+47 97747012</a></p>
+            <h4>Phone</h4>
+            <p><a href="tel:+4748359533">+47 97747012</a></p>
+          </div>
+          <div class="method-details">
+            <h4>Locations</h4>
+            <div class="location-items">
+              <p><span class="location-icon">📍</span>Oslo / Bergen</p>
+            </div>
           </div>
         </div>
         <div class="social-links">
@@ -66,7 +72,7 @@ export default {
 
 .contact-methods {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 4rem;
 }
 
@@ -107,7 +113,7 @@ export default {
   }
   
   .section-title {
-    font-size: 3rem;
+    font-size: 1.8rem;
     margin-bottom: 3rem;
   }
   
@@ -152,6 +158,44 @@ export default {
   .social-icon {
     width: 28px;
     height: 28px;
+  }
+}
+
+.locations {
+  /* margin-top: 2rem; */
+}
+
+.location-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-items p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text);
+  font-size: 1.6rem;
+  margin: 0;
+  padding-top: 0.6rem;
+}
+
+.location-icon {
+  font-size: 1.2rem;
+}
+
+.location-text {
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .location-items {
+    gap: 1rem;
+  }
+  
+  .location-items p {
+    font-size: 1rem;
   }
 }
 </style> 
