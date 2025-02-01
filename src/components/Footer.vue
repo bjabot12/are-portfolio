@@ -10,13 +10,13 @@
         <router-link to="/contact">KONTAKT</router-link>
       </div>
       <div class="social-links">
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+        <a href="https://no.linkedin.com/in/are-botnevik-1100312b9?trk=public_post_feed-actor-name" target="_blank" rel="noopener">
           <img src="@/assets/images/linkedin.webp" alt="LinkedIn" class="social-icon">
         </a>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener">
+        <a href="https://www.instagram.com/arebotnevik/" target="_blank" rel="noopener">
           <img src="@/assets/images/insta.png" alt="Instagram" class="social-icon">
         </a>
-        <a href="https://www.imdb.com" target="_blank" rel="noopener">
+        <a href="https://www.imdb.com/name/nm16185899/?ref_=nv_sr_srsg_0_tt_0_nm_3_in_0_q_arebotnev" target="_blank" rel="noopener">
           <img src="@/assets/images/hvit_imdb.png" alt="IMDB" class="social-icon">
         </a>
       </div>
@@ -64,6 +64,10 @@ export default {
   gap: 2rem;
 }
 
+.social-links {
+    margin-top: 1rem;
+}
+
 .footer-links a {
   color: var(--text);
   text-decoration: none;
@@ -77,7 +81,7 @@ export default {
 .copyright {
   color: var(--text-secondary);
   font-size: 0.9rem;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 
 @media (max-width: 768px) {

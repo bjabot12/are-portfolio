@@ -1,26 +1,26 @@
 <template>
   <section id="contact" class="section contact">
     <div class="container">
-      <h1 class="section-title">Hei! Kult at du er innom nettsiden min. Ikke nøl med å ta kontakt :) </h1>
+      <h1 class="section-title">Hei! Kult at du er innom nettsiden min. Ikkje nøl med å ta kontakt :) </h1>
       <div class="contact-info">
         <div class="contact-methods">
           <div class="method-details">
             <h4>Mail</h4>
-            <p><a href="mailto:are@enkproduksjon.no">are@enkproduksjon.no</a></p>
+            <p><a href="mailto:arebotnevik@gmail.com">arebotnevik@gmail.com</a></p>
           </div>
           <div class="method-details">
             <h4>Mobil</h4>
-            <p><a href="tel:+4792223344">+47 922 23 344</a></p>
+            <p><a href="tel:+4797747012">+47 97747012</a></p>
           </div>
         </div>
         <div class="social-links">
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+          <a href="https://no.linkedin.com/in/are-botnevik-1100312b9?trk=public_post_feed-actor-name" target="_blank" rel="noopener">
             <img src="@/assets/images/linkedin.webp" alt="LinkedIn" class="social-icon">
           </a>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener">
+          <a href="https://www.instagram.com/arebotnevik/" target="_blank" rel="noopener">
             <img src="@/assets/images/insta.png" alt="Instagram" class="social-icon">
           </a>
-          <a href="https://www.imdb.com" target="_blank" rel="noopener">
+          <a href="https://www.imdb.com/name/nm16185899/?ref_=nv_sr_srsg_0_tt_0_nm_3_in_0_q_arebotnev" target="_blank" rel="noopener">
             <img src="@/assets/images/hvit_imdb.png" alt="IMDB" class="social-icon">
           </a>
         </div>

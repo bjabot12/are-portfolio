@@ -2,35 +2,38 @@
     <section id="about" class="section about">
       <div class="container">
         <div class="about-content">
-          <div class="about-text">
-            <h2 class="section-title">About Me</h2>
+          <div class="left-column">
             <div class="glass-card">
-              <p class="bio">I'm Are Botnevik, a passionate filmmaker and visual storyteller. My work focuses on capturing authentic human stories through innovative cinematography and compelling narratives that resonate with audiences worldwide.</p>
-              <div class="stats">
-                <div class="stat-item">
-                  <span class="stat-number">5+</span>
-                  <span class="stat-label">Years Experience</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-number">50+</span>
-                  <span class="stat-label">Projects</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-number">12</span>
-                  <span class="stat-label">Awards</span>
+              <p class="bio">Helt siden jeg var liten, har jeg alltid hatt et kamera tilgjengelig - det ble til en av mine måter å utrykke kreativiteten på. Filmskaping har nå blitt jobben min og jeg får utfordret kreativiteten min hver eneste dag. Som fotograf brenner jeg for å fortelle historier hvor det visuelle utrykket er høyt prioritert, men jeg har også mye erfaring med klipp og grade. Det gir meg ikke bare flere ferdigheter, men et helhetlig blikk på produskjonen. For meg handler det om at fortellingene skal huskes og de skal gjøre en forskjell hos publikum.</p>
+            </div>
+            
+            <div class="education-section">
+              <h3 class="section-subtitle">UTDANNING</h3>
+              <div class="education-entries">
+                <div v-for="edu in education" :key="edu.year" class="education-entry">
+                  <span class="entry-year">{{ edu.year }}</span>
+                  <!-- <span class="separator">-</span> -->
+                  <h4 class="entry-title">{{ edu.degree }}</h4>
+                  <!-- <span class="separator">-</span> -->
+                  <p class="entry-description">{{ edu.school }}</p>
                 </div>
               </div>
-              <div class="skills">
-                <h3>Expertise</h3>
-                <div class="skills-grid">
-                  <div class="skill-item" v-for="(skill, index) in skills" :key="index">
-                    <span class="skill-icon">{{ skill.icon }}</span>
-                    <span class="skill-name">{{ skill.name }}</span>
-                  </div>
+            </div>
+
+            <div class="expertise-section">
+              <h3 class="section-subtitle">FERDIGHETER</h3>
+              <div class="expertise-entries">
+                <div v-for="skill in skills" :key="skill.name" class="expertise-entry">
+                  <span class="expertise-icon">{{ skill.icon }}</span>
+                  <!-- <span class="separator">-</span> -->
+                  <h4 class="expertise-title">{{ skill.name }}</h4>
+                  <!-- <span class="separator">-</span>
+                  <p class="expertise-description">{{ skill.description }}</p> -->
                 </div>
               </div>
             </div>
           </div>
+
           <div class="about-image">
             <div class="image-container">
               <img src="@/assets/images/Are.jpg" alt="Are Botnevik" />
@@ -39,13 +42,26 @@
           </div>
         </div>
         <div class="projects-list">
-          <h3 class="projects-title">Selected Projects</h3>
+          <h3 class="section-subtitle">UTVALGTE REFERANSE PROSJEKTER</h3>
           <div class="project-entries">
             <div v-for="project in projects" :key="project.year" class="project-entry">
               <span class="project-year">{{ project.year }}</span>
               <h4 class="project-title">{{ project.title }}</h4>
-              <span class="separator">-</span>
+              <!-- <span class="separator">-</span> -->
               <p class="project-description">{{ project.description }}</p>
+            </div>
+          </div>
+
+          <h3 class="section-subtitle">HØYDEPUNKT</h3>
+          <div class="highlights-entries">
+            <div v-for="highlight in highlights" :key="highlight.project" class="highlight-entry">
+              <h4 class="highlight-title">{{ highlight.project }}</h4>
+              <div class="nominations-list">
+                <div v-for="(nomination, index) in highlight.nominations" :key="index" 
+                     class="nomination-item">
+                  <span class="nomination-text">{{ nomination }}</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -58,30 +74,121 @@
     name: 'AboutSection',
     data() {
       return {
+        education: [
+          {
+ 
+          },
+          {
+            year: '2022-2025',
+            title: 'KUNSTIG UINTELLIGENS',
+            description: '  |  HUMORSERIE  |  A-FOTO'
+          },
+          {
+            year: '🎓',
+            degree: 'BACHELORGRAD I TV- OG DOKUMENTARPRODUKSJON',
+            school: 'ENKAMERA FOTO'
+          },
+          {
+            year: '📍',
+            degree: 'FAKULTET FOR FILM, TV OG SPILL',
+            school: 'UNIVERSITETET I INNLANDET'
+          },
+          {
+
+          }
+        ],
         skills: [
-          { name: 'Documentary', icon: '🎥' },
-          { name: 'Cinematography', icon: '📷' },
-          { name: 'Video Editing', icon: '✂️' },
-          { name: 'Storytelling', icon: '📖' },
-          { name: 'Sound Design', icon: '🎧' },
-          { name: 'Color Grading', icon: '🎨' }
+          { 
+            name: 'FOTO', 
+            icon: '🎥',
+          },
+          { 
+            name: 'GRADE', 
+            icon: '🎨',
+          },
+          { 
+            name: 'KLIPP', 
+            icon: '✂️',
+          },
+          { 
+            name: 'STILLSFOTO', 
+            icon: '📷',
+            description: 'Crafting immersive audio environments'
+          },
+          { 
+            name: 'ADOBE SUITE OG DAVINCI RESOLVE STUDIO', 
+            icon: '🖥️',
+          },
+          { 
+            name: 'DRONE A1/A3', 
+            icon: '👨‍✈️',
+            
+          }
         ],
         projects: [
           {
+            year: '2024',
+            title: 'KUNSTIG UINTELLIGENS',
+            description: '  |  HUMORSERIE  |  A-FOTO'
+          },
+          {
+            year: '2024',
+            title: 'PSYCHO KILLER',
+            description: '  |  KORTFILM  |  FILMFOTOGRAF'
+          },
+          {
+            year: '2024',
+            title: 'FOLKEOPPLYSNINGEN (KATASTROFE)',
+            description: '  |  DOKUMENTARSERIE  |  TEDDY TV  |  B.KAM / TEK.ASS'
+          },
+          {
+            year: '2024',
+            title: 'DET VAR EN GANG EN FJORD',
+            description: '|  KORTDOKUMENTAR  | FOTO / KLIPP / GRADE'
+          },
+          {
+            year: '2024',
+            title: 'APPLAUS',
+            description: '| KORTFILM | DEN NORSKE FILMSKOLEN  |  GRIP / STILLSFOTO'
+          },
+          {
             year: '2023',
-            title: 'The Silent Forest',
-            description: 'A documentary exploring the hidden life of Norways ancient woodlands.'
+            title: 'AKTIV ALDRING',
+            description: '|  KORTDOKUMENTAR  |  FOTO'
           },
           {
-            year: '2022',
-            title: 'Urban Rhythms',
-            description: 'A visual journey through Oslos evolving cityscape and culture.'
+            year: '2023',
+            title: 'BAK KASSA',
+            description: '|  KORTDOKUMENTAR  |  KLIPP'
           },
           {
-            year: '2021',
-            title: 'Northern Lights',
-            description: 'An intimate portrait of life above the Arctic Circle.'
+            year: '2023',
+            title: 'ADHD-MIN SUPERKRAFT',
+            description: '|  KORTDOKUMENTAR  |  FOTO / KLIPP'
+          },
+          {
+            year: '2023',
+            title: 'VINTERSPILL',
+            description: '|  MUSIKKFESTIVAL  |  STILLSFOTO'
+          },
+          {
+            year: '2023',
+            title: 'HEKTA-KONFIRMANTLEIR',
+            description: '|  LIVE PROJEKTERING  |  UNG PRODUKSJON | KAMERAOPPERATØR'
+          
           }
+        ],
+        highlights: [
+          {
+            project: 'DET VAR EN GANG EN FJORD',
+            nominations: [
+              'AMANDUS BLIKKFANG | PUBLIKUMSPRISEN 2024',
+              'BIFF | NOMINERT: BESTE NORSKE KORTDOKUMENTAR 2024',
+              'NORDIC DOCS | NOMINERT: BESTE KORTDOKUMENTAR 2024',
+              'DEN KULTURELLE SKOLESEKKEN | TURNÈ PÅ VESTLANDET 2024'
+            ]
+          },
+          
         ]
       }
     }
@@ -103,7 +210,7 @@
     right: -20%;
     width: 80%;
     height: 200%;
-    background: radial-gradient(circle, rgba(0, 122, 255, 0.05) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.05) 0%, transparent 70%);
     transform: rotate(-45deg);
   }
   
@@ -111,7 +218,22 @@
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
     gap: 4rem;
-    align-items: center;
+    align-items: start;
+  }
+  
+  .left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .glass-card {
+    margin-bottom: 0;
+  }
+  
+  .expertise-section {
+    display: flex;
+    flex-direction: column;
   }
   
   .section-title {
@@ -122,19 +244,10 @@
     -webkit-text-fill-color: transparent;
   }
   
-  .glass-card {
-    background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(10px);
-    /* border-radius: 24px; */
-    padding: 2.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  
   .bio {
     font-size: 1.2rem;
     line-height: 1.8;
     color: var(--text-secondary);
-    margin-bottom: 2.5rem;
   }
   
   .stats {
@@ -210,7 +323,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease;
   }
   
   .image-overlay {
@@ -267,7 +379,7 @@
     font-size: 1.3rem;
     /* font-family: 'Playfair Display', serif; */
     font-weight: 700;
-    font-style: italic;
+    font-style: italic;     
     margin: 0;
     white-space: nowrap;
   }
@@ -322,6 +434,250 @@
   @media (max-width: 480px) {
     .stats {
       grid-template-columns: 1fr;
+    }
+  }
+
+  .expertise-entries {
+    display: flex;
+    flex-direction: column;
+    /* gap: 1.5rem; */
+  }
+
+  .expertise-entry {
+    display: flex;
+    align-items: center;
+    /* gap: 1rem; */
+    /* padding-bottom: 1.5rem; */
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
+  }
+
+  .expertise-icon {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+  .separator {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.2rem;
+  }
+
+  .expertise-title {
+    color: white;
+    font-size: 1rem;
+    /* font-family: 'Playfair Display', serif; */
+    font-weight: 700;
+    /* font-style: italic; */
+    margin: 0;
+  }
+
+  .expertise-description {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    margin: 0;
+    flex: 1;
+  }
+
+  h3.expertise-title {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 968px) {
+    .about {
+      padding: 4rem 0;
+    }
+
+    .about-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .left-column {
+      gap: 2rem;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+    }
+
+    .glass-card {
+      padding: 1.5rem;
+    }
+
+    .bio {
+      font-size: 1.1rem;
+    }
+
+    .expertise-entry {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+      padding: 1rem 0;
+    }
+
+    .expertise-icon {
+      font-size: 1.3rem;
+    }
+
+    .expertise-title {
+      font-size: 1.4rem;
+    }
+
+    .expertise-description {
+      font-size: 1rem;
+    }
+
+    .separator {
+      display: none;
+    }
+
+    h3.expertise-title {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .image-container {
+      /* aspect-ratio: 16/9; */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .about {
+      padding: 3rem 0;
+    }
+
+    .section-title {
+      font-size: 2rem;
+    }
+  }
+
+  .section-subtitle {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  .education-entries,
+  .expertise-entries {
+    display: flex;
+    flex-direction: column;
+    /* gap: 1.5rem; */
+  }
+
+  .education-entry,
+  .expertise-entry {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* padding-bottom: 1.5rem; */
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
+  }
+
+  .entry-year {
+    color: var(--accent);
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+  .entry-title {
+    color: white;
+    font-size: 1rem;
+    /* font-family: 'Playfair Display', serif; */
+    font-weight: 700;
+    /* font-style: italic; */
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  .entry-description {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  @media (max-width: 968px) {
+    .education-entry,
+    .expertise-entry {
+      flex-direction: column;
+      align-items: flex-start;
+      /* gap: 0.5rem;
+      padding: 1rem 0; */
+    }
+
+    .entry-title {
+      font-size: 1rem;
+    }
+
+    .entry-description {
+      font-size: 1rem;
+    }
+
+    .section-subtitle {
+      font-size: 1.8rem;
+      /* margin-bottom: 1.5rem; */
+    }
+
+    .separator {
+      display: none;
+    }
+  }
+
+  .nominations-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: 1rem;
+  }
+
+  .nomination-item {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+  }
+
+  .highlight-entry {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 1.5rem;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
+  }
+
+  .highlight-title {
+    color: white;
+    font-size: 1.3rem;
+    /* font-family: 'Playfair Display', serif; */
+    font-weight: 700;
+    font-style: italic;
+    margin: 0;
+    text-align: left;
+  }
+
+  .nominations-list {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 0.5rem;
+    margin-left: 1rem;
+  }
+
+  .nomination-item {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 968px) {
+    .highlight-title {
+      font-size: 1.4rem;
+    }
+
+    .nominations-list {
+      margin-left: 0;
+    }
+
+    .nomination-item {
+      font-size: 1rem;
     }
   }
   </style> 
