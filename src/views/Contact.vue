@@ -5,15 +5,15 @@
       <div class="contact-info">
         <div class="contact-methods">
           <div class="method-details">
-            <h4>Mail</h4>
+            <h4>E-post</h4>
             <p><a href="mailto:arebotnevik@gmail.com">arebotnevik@gmail.com</a></p>
           </div>
           <div class="method-details">
-            <h4>Phone</h4>
+            <h4>Mobil</h4>
             <p><a href="tel:+4748359533">+47 97747012</a></p>
           </div>
           <div class="method-details">
-            <h4>Locations</h4>
+            <h4>Sted</h4>
             <div class="location-items">
               <p><span class="location-icon">📍</span>Oslo / Bergen</p>
             </div>
