@@ -11,10 +11,6 @@
     <div class="container hero-content">
      
     </div>
-    <div class="scroll-indicator">
-      <div class="mouse"></div>
-      <span>Scroll to explore</span>
-    </div>
   </section>
 </template>
 
