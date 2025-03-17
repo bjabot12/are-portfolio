@@ -584,7 +584,7 @@
   .expertise-entry {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: .5rem;
     /* padding-bottom: 1.5rem; */
     /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
   }
