@@ -4,7 +4,7 @@
         <div class="about-content">
           <div class="left-column">
             <div class="glass-card">
-              <p class="bio">Helt siden jeg var liten, har jeg alltid hatt et kamera tilgjengelig - det ble til en av mine måter å utrykke kreativiteten på. Filmskaping har nå blitt jobben min og jeg får utfordret kreativiteten min hver eneste dag. Som fotograf brenner jeg for å fortelle historier hvor det visuelle utrykket er høyt prioritert, men jeg har også mye erfaring med klipp og grade. Det gir meg ikke bare flere ferdigheter, men et helhetlig blikk på produskjonen. For meg handler det om at fortellingene skal huskes og de skal gjøre en forskjell hos publikum.</p>
+              <p class="bio">Filmskaping har nå blitt jobben min og jeg får utfordret kreativiteten min hver eneste dag. Som fotograf brenner jeg for å fortelle historier hvor det visuelle utrykket er høyt prioritert, men jeg har også mye erfaring med klipp og grade. Det gir meg ikke bare flere ferdigheter, men et helhetlig blikk på produskjonen. For meg handler det om at fortellingene skal huskes og de skal gjøre en forskjell hos publikum.</p>
             </div>
             
             <div class="education-section">
@@ -138,7 +138,7 @@
           },
           {
             year: '2024',
-            title: 'FOLKEOPPLYSNINGEN (KATASTROFE)',
+            title: 'KATASTROFE',
             description: '  |  DOKUMENTARSERIE  |  TEDDY TV  |  B.KAM / TEK.ASS'
           },
           {
@@ -338,10 +338,6 @@
     width: 100%;
     height: 100%;
     /* background: linear-gradient(45deg, rgba(0, 122, 255, 0.2), transparent); */
-  }
-  
-  .image-container:hover img {
-    transform: scale(1.05);
   }
   
   .projects-list {
