@@ -1,7 +1,7 @@
 <template>
   <section id="contact" class="section contact">
     <div class="container">
-      <h1 class="section-title">Hei! Kult at du er innom nettsiden min. Ikkje nøl med å ta kontakt :) </h1>
+      <h1 class="section-title">Hei! Kult at du er innom nettsiden min. Ikke nøl med å ta kontakt :) </h1>
       <div class="contact-info">
         <div class="contact-methods">
           <div class="method-details">
@@ -103,7 +103,7 @@ export default {
 
 @media (max-width: 1200px) {
   .contact-methods {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

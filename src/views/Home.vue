@@ -4,9 +4,6 @@
       <div class="hero-content">
         <Hero />
       </div>
-      <div class="scroll-indicator">
-        <div class="arrow" style="font-family: Arial, sans-serif;">˅</div>
-      </div>
     </section>
     <Projects />
   </div>

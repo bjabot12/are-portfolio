@@ -182,9 +182,9 @@ export default {
   transition: opacity 0.3s ease;
 }
 
-.project-image-container:hover .project-image {
+/* .project-image-container:hover .project-image {
   transform: scale(1.05);
-}
+} */
 
 .play-button {
   color: white;
