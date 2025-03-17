@@ -250,7 +250,7 @@ export default {
   transition: all 0.3s ease;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .project-header {
     flex-direction: column;
     align-items: flex-start;
