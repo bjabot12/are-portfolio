@@ -86,7 +86,7 @@
           {
             year: '🎓',
             degree: 'BACHELORGRAD I TV- OG DOKUMENTARPRODUKSJON',
-            school: 'ENKAMERA FOTO'
+            school: 'FOTO'
           },
           {
             year: '📍',
