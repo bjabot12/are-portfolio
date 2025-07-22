@@ -127,9 +127,24 @@
         ],
         projects: [
           {
+            year: '2025',
+            title: 'RUNA',
+            description: '  |  SPILLEFILM  |  KAM.ASS'
+          },
+          {
+            year: '2025',
+            title: 'MIDNATTSMØTET',
+            description: '  |  KORTFILM  |  B-FOTO'
+          },
+          {
+            year: '2025',
+            title: 'ETT SISTE KAPITTEL',
+            description: '  |  KORTDOKUMENTAR  |  FOTO / KLIPP / GRADE'
+          },
+          {
             year: '2024',
             title: 'KUNSTIG UINTELLIGENS',
-            description: '  |  HUMORSERIE  |  A-FOTO'
+            description: '  |  HUMORSERIE  |  DOP'
           },
           {
             year: '2024',
@@ -149,7 +164,7 @@
           {
             year: '2024',
             title: 'APPLAUS',
-            description: '| KORTFILM | DEN NORSKE FILMSKOLEN  |  GRIP / STILLSFOTO'
+            description: '| KORTFILM | DEN NORSKE FILMSKOLEN  |  GRIP'
           },
           {
             year: '2023',
@@ -171,12 +186,6 @@
             title: 'VINTERSPILL',
             description: '|  MUSIKKFESTIVAL  |  STILLSFOTO'
           },
-          {
-            year: '2023',
-            title: 'HEKTA-KONFIRMANTLEIR',
-            description: '|  LIVE PROJEKTERING  |  UNG PRODUKSJON | KAMERAOPPERATØR'
-          
-          }
         ],
         highlights: [
           {

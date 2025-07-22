@@ -81,6 +81,17 @@ export default {
           ],
           vimeoId: "347119375"
         },
+        {
+          id: 4,
+          title: "ETT SISTE KAPITTEL",
+          description: "- KORTDOKUMENTAR",
+          images: [
+            "ESK_1.jpg",
+            "ESK_2.jpg",
+            "ESK_3.jpg"
+          ],
+          vimeoId: "347119375"
+        },
       ]
     }
   },
