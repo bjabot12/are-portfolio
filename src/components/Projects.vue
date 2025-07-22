@@ -263,7 +263,7 @@ export default {
 
 @media (max-width: 1200px) {
   .project-header {
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: flex-start;
   }
   

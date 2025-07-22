@@ -42,7 +42,7 @@
           </div>
         </div>
         <div class="projects-list">
-          <h3 class="section-subtitle">UTVALGTE REFERANSE PROSJEKTER</h3>
+          <h3 class="section-subtitle">REFERANSEPROSJEKTER</h3>
           <div class="project-entries">
             <div v-for="project in projects" :key="project.year" class="project-entry">
               <span class="project-year">{{ project.year }}</span>
