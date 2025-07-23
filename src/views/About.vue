@@ -5,7 +5,7 @@
           <div class="left-column">
             <div class="glass-card">
               <p class="bio">Jeg er en frilans filmfotograf med bachelorgrad i TV- og dokumentarproduksjon fra TV-skolen i Lillehammer. Som fotograf er jeg opptatt av å skape den rette visuelle stemningen for å løfte prosjektet og gi det mer dybde. Jeg ønsker å skape et univers hvor publikum kan glemme tid og sted og kjenne på nærhet og tilstedeværelse.
-I tillegg har jeg mye erfaring med klipp og grade, noe som gir meg en større forståelse for alle ledd i produksjonen.
+I tillegg har jeg mye erfaring med klipp og grade, noe som gir meg en større forståelse for alle ledd i produksjonen. </p>
  </div>
             
             <!-- <div class="education-section">
