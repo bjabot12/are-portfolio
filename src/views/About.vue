@@ -4,21 +4,20 @@
         <div class="about-content">
           <div class="left-column">
             <div class="glass-card">
-              <p class="bio">Filmskaping har nå blitt jobben min og jeg får utfordret kreativiteten min hver eneste dag. Som fotograf brenner jeg for å fortelle historier hvor det visuelle utrykket er høyt prioritert, men jeg har også mye erfaring med klipp og grade. Det gir meg ikke bare flere ferdigheter, men et helhetlig blikk på produskjonen. For meg handler det om at fortellingene skal huskes og de skal gjøre en forskjell hos publikum.</p>
-            </div>
+              <p class="bio">Jeg er en frilans filmfotograf med bachelorgrad i TV- og dokumentarproduksjon fra TV-skolen i Lillehammer. Som fotograf er jeg opptatt av å skape den rette visuelle stemningen for å løfte prosjektet og gi det mer dybde. Jeg ønsker å skape et univers hvor publikum kan glemme tid og sted og kjenne på nærhet og tilstedeværelse.
+I tillegg har jeg mye erfaring med klipp og grade, noe som gir meg en større forståelse for alle ledd i produksjonen. </p>
+ </div>
             
-            <div class="education-section">
+            <!-- <div class="education-section">
               <h3 class="section-subtitle">UTDANNING</h3>
               <div class="education-entries">
                 <div v-for="edu in education" :key="edu.year" class="education-entry">
                   <span class="entry-year">{{ edu.year }}</span>
-                  <!-- <span class="separator">-</span> -->
                   <h4 class="entry-title">{{ edu.degree }}</h4>
-                  <!-- <span class="separator">-</span> -->
                   <p class="entry-description">{{ edu.school }}</p>
                 </div>
               </div>
-            </div>
+            </div> -->
 
             <div class="expertise-section">
               <h3 class="section-subtitle">FERDIGHETER</h3>
