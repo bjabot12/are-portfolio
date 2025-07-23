@@ -49,6 +49,17 @@ export default {
     return {
       activeVideo: null,
       projects: [
+      {
+          id: 4,
+          title: "ETT SISTE KAPITTEL",
+          description: "- KORTDOKUMENTAR",
+          images: [
+            "ESK_1.jpg",
+            "ESK_2.2.jpg",
+            "ESK_3.jpg"
+          ],
+          vimeoId: "347119375"
+        },
         {
           id: 1,
           title: "PSYCHO KILLER ",
@@ -78,17 +89,6 @@ export default {
             "AA_2.png",
             "AA_1.png",
             "AA_3.png"
-          ],
-          vimeoId: "347119375"
-        },
-        {
-          id: 4,
-          title: "ETT SISTE KAPITTEL",
-          description: "- KORTDOKUMENTAR",
-          images: [
-            "ESK_1.jpg",
-            "ESK_2.jpg",
-            "ESK_3.jpg"
           ],
           vimeoId: "347119375"
         },
