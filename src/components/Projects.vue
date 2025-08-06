@@ -271,4 +271,10 @@ export default {
     grid-template-columns: 1fr;
   }
 }
+@media (max-width: 768px) {
+  .project-title, .project-description {
+    font-size: .8rem;
+  }
+
+}
 </style> 

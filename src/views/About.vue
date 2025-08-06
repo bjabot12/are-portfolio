@@ -219,17 +219,6 @@ I tillegg har jeg mye erfaring med klipp og grade, noe som gir meg en større fo
     box-sizing: border-box;
   }
   
-  .about::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -20%;
-    width: 80%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.05) 0%, transparent 70%);
-    transform: rotate(-45deg);
-  }
-  
   .about-content {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
@@ -402,8 +391,8 @@ I tillegg har jeg mye erfaring med klipp og grade, noe som gir meg en større fo
   
   @media (max-width: 968px) {
     .project-entry {
-      flex-wrap: wrap;
-      gap: 0.75rem;
+      /* flex-wrap: wrap; */
+      gap: 0.4rem;
     }
     
     .project-year,
@@ -417,9 +406,15 @@ I tillegg har jeg mye erfaring med klipp og grade, noe som gir meg en større fo
     
     .project-description {
       font-size: 1rem;
-      width: 100%;
-      margin-top: 0.5rem;
+      max-width: 100%;
+      /* margin-top: 0.5rem; */
     }
+     .image-container img {
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover; */
+  }
+  
   }
 
   @media (max-width: 768px) {
@@ -432,16 +427,16 @@ I tillegg har jeg mye erfaring med klipp og grade, noe som gir meg en større fo
       font-size: 1rem;
     }
     
-    .project-title {
-      font-size: 1.4rem;
-    }
-    
     .project-description {
       font-size: 1rem;
     }
   }
 
   @media (max-width: 480px) {
+
+    .project-description {
+      font-size: .3rem;
+    }
     .stats {
       grid-template-columns: 1fr;
     }
@@ -456,9 +451,14 @@ I tillegg har jeg mye erfaring med klipp og grade, noe som gir meg en større fo
   .expertise-entry {
     display: flex;
     align-items: center;
+    /* width: 100%; */
     /* gap: 1rem; */
     /* padding-bottom: 1.5rem; */
     /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
+  }
+
+  .expertise-section {
+    width: 170%;
   }
 
   .expertise-icon {
@@ -500,13 +500,14 @@ I tillegg har jeg mye erfaring med klipp og grade, noe som gir meg en større fo
 
     .container {
       padding: 0 1rem;
-      max-width: 100vw;
+      /* max-width: 100vw; */
       overflow-x: hidden;
     }
 
     .about-content {
-      grid-template-columns: 1fr;
-      gap: 2rem;
+      /* grid-template-columns: 1fr; */
+      margin-top: 2rem;
+      gap: .5rem;
     }
 
     .left-column {
@@ -514,10 +515,11 @@ I tillegg har jeg mye erfaring med klipp og grade, noe som gir meg en større fo
     }
 
     .glass-card {
+      margin-top: 1rem;
       padding: 1rem;
       margin: 0;
       border-radius: 12px;
-      width: auto;
+      width: 93%;
     }
 
     .bio {
@@ -572,6 +574,14 @@ I tillegg har jeg mye erfaring med klipp og grade, noe som gir meg en større fo
     .glass-card {
         width: 93%;
     }
+
+    .project-description {
+      font-size: .8rem;
+    }
+
+    .project-title {
+      font-size: .8rem;
+    }
   }
 
   .section-subtitle {
@@ -584,17 +594,6 @@ I tillegg har jeg mye erfaring med klipp og grade, noe som gir meg en større fo
   .education-entries,
   .expertise-entries {
     display: flex;
-    flex-direction: column;
-    /* gap: 1.5rem; */
-  }
-
-  .education-entry,
-  .expertise-entry {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-    /* padding-bottom: 1.5rem; */
-    /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
   }
 
   .entry-year {
@@ -620,14 +619,7 @@ I tillegg har jeg mye erfaring med klipp og grade, noe som gir meg en større fo
   }
 
   @media (max-width: 968px) {
-    .education-entry,
-    .expertise-entry {
-      flex-direction: column;
-      align-items: flex-start;
-      /* gap: 0.5rem;
-      padding: 1rem 0; */
-    }
-
+    
     .entry-title {
       font-size: 1rem;
     }
