@@ -103,4 +103,20 @@ export default {
     font-size: 1.5rem;
   }
 }
+@media (max-width: 480px) {
+  .project-title {
+    font-size: 1rem;
+  }
+  .hero {
+    padding-bottom: 3rem;
+  }
+
+  .scroll-indicator {
+    /* bottom: 1.5rem; */
+  }
+  
+  .arrow {
+    font-size: 1.5rem;
+  }
+}
 </style> 

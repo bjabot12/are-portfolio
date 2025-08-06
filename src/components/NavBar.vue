@@ -102,6 +102,7 @@ export default {
 
   .nav-links {
     gap: 1rem;
+    font-size: .8rem;
   }
 }
 </style> 

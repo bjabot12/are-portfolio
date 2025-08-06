@@ -198,23 +198,23 @@ export default {
   transform: scale(1.05);
 }
 
-@media (max-width: 968px) {
+/* @media (max-width: 968px) {
   .about-content {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
   }
   
   .stats {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   
   .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
 @media (max-width: 480px) {
   .stats {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
   }
 }
-</style> 
+</style>  */
